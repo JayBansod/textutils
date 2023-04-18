@@ -13,16 +13,19 @@ export default function Textform(props) {
   let handelUpClick = () => {
     let newUpperCase = text.toUpperCase();
     setText(newUpperCase);
+    props.showAlert("Converted to Uppercase", "primary");
   };
 
   let handelLowerClick = () => {
     let newlowerCase = text.toLowerCase();
     setText(newlowerCase);
+    props.showAlert("Converted to Lowercase", "primary");
   };
 
   let handelClearrClick = () => {
     setText("");
     setCount("0");
+    props.showAlert("Text is cleared", "primary");
   };
   return (
     <>
