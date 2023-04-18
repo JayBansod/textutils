@@ -26,7 +26,7 @@ export default function Textform(props) {
   };
   return (
     <>
-      <div className="mb-3 container-fluid">
+      <div className="mb-3 container-fluid ">
         <label htmlFor="exampleFormControlTextarea1" className="form-label">
           <h2>{props.heading}</h2>
         </label>
